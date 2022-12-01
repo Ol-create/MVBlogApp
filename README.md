@@ -1,4 +1,4 @@
-# mvblogapp
+# Blog App
 
 ## Getting Started
 
