@@ -6,7 +6,7 @@ To get a local copy of the project, follow these steps:
 1. Open the terminal and navigate to the folder where you would like to put these files.
 2. Type the following commands into the terminal: 
  ```
- git clone https://github.com/jsug9/blog-app
+ git clone https://github.com/Ol-create/MVBlogApp
  ```
  ```
  cd blog-app
