@@ -186,7 +186,7 @@ I would like to thank Microverse and all our peers and colleagues there.
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](https://github.com/andym80/Blog-app-Rails/blob/4ea7ceaf93ece76ba539f342bc6e52afe073aeff/LICENSE) licensed.
-Andy Menutti 2022
+Paul, Oluyemi 2022
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
