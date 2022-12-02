@@ -11,6 +11,31 @@ To get a local copy of the project, follow these steps:
  ```
  cd blog-app
  ```
+Check the ruby version being used and install it if it is not the same with that of the local machine
+Set up database direct them to the config/database.yml file
+```
+bundle install
+```
+```
+'npm install' or 'yarn install'
+```
+```
+rails db:create
+```
+```
+rails db:migrate
+```
+```
+rails 'db:seed' if there is data in the seed
+```
+```
+'rails s' to start the server locally
+```
+
+To execute the tests, run the following command in your terminal:
+```
+rspec
+```
  
  ## Author
 
