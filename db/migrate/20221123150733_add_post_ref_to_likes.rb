@@ -1,4 +1,5 @@
-class AddPostsRefToLikes < ActiveRecord::Migration[7.0]
+# add post references to likes
+class AddPostRefToLikes < ActiveRecord::Migration[7.0]
   def change
     add_reference :likes, :post, null: false, foreign_key: true
   end
