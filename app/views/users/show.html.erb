@@ -1,0 +1,26 @@
+<section class="user-section">
+  <div class="user-details">
+    <%= image_tag("profile-picture.jpg", width:'100vw') %>
+    <div class="user-info">
+      <p class="user-name"><%= @user.name %></p>
+      <p class="user-post-counter">Number of posts: <%= @user.posts_counter %></p>
+    </div>
+  </div>
+  <div class="bio-container">
+    <h3> Bio </h3>
+    <p> <%= @user.bio%></p>
+  </div>
+  <ul class="user-recent-posts">
+    <% @user.recent_post(@user.id).each_with_index do |post, index|%>
+      <li>
+        <h3 class="user-post_heading"> Post #<%= index + 1 %> </h3>
+        <p class="post-text"><%= post.text %></p>
+        <p class="comment-counter">
+          comments: <%= post.comments_counter %>,
+          likes: <%= post.likes_counter %>
+        </p>
+      </li>
+    <%end%>
+  </ul>
+  <a href="/users/<%= @user.id %>/posts" class="see-all-posts">See all posts </a>
+</section>
