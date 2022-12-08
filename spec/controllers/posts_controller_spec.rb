@@ -16,3 +16,20 @@ RSpec.describe 'Posts', type: :request do
       expect(response.body).to include('This is the Posts index page.')
     end
   end
+
+  describe 'GET /show' do
+    before(:each) { get user_post_path(6, 1) }
+
+    it 'should return 200 success' do
+      expect(response).to have_http_status(200)
+    end
+
+    it 'should render the show template' do
+      expect(response).to render_template(:show)
+    end
+
+    it 'should render the correct text in the template' do
+      expect(response.body).to include('This is the Posts show page.')
+    end
+  end
+end
