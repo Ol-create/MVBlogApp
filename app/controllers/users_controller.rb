@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
-  def index; end
+  def index
+    @users = User.all
+    @user = User.find(params[:id])
+  end
 
   def show
     puts params
