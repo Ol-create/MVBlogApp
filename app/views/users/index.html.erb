@@ -1,0 +1,10 @@
+<% @users.each do |user| %>
+  <div class="user_container">
+    <img src="<%= user.photo %>" alt="Use picture" class="user_photo">
+    <div class="user_data">
+      <h2><%= user.name%></h2>
+      <p>Number of posts: <%= user.post_counter %></p>
+      <%= link_to "See more", user_path(user.id), {:class => "button_class"} %>
+    </div>
+  </div>
+<% end %>
