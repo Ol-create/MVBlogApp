@@ -134,6 +134,12 @@ bundle install
 
 ## 👥 Author <a name="author"></a>
 
+👤 **Robin Benitez Mora**
+
+- GitHub: [@robinbenitezmora](https://github.com/robinbenitezmora)
+- Twitter: [@Mecanico_Robin](https://twitter.com/mecanico_robin)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/robin-benitez-mora/)
+
 👤 **Oluyemi Paul**
 
 - [GitHub: Ol-create](https://github.com/Ol-create)
