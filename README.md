@@ -134,6 +134,12 @@ bundle install
 
 ## 👥 Author <a name="author"></a>
 
+👤 **Diego Hernández**
+
+- GitHub: [@diehoh40](https://github.com/diegoh40)
+- Twitter: [@Diegoart80](https://twitter.com/Diegoart80)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/diegoarturoh/)
+
 👤 **Oluyemi Paul**
 
 - [GitHub: Ol-create](https://github.com/Ol-create)
