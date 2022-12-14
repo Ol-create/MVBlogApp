@@ -1,8 +1,16 @@
 <header>
   <nav class="navbar">
     <ul class="link_list">
-      <li class="link_list_li"><%= link_to "Home", users_path(@user), class: "link_class" %></li>
-      <li class="link_list_li"><%= link_to "Create Post", new_post_path, class: "link_class" %></li>
+      <div class="left-links">
+        <li class="link_list_li"><%= link_to "Home", users_path(@user), class: "link_class" %></li>
+        <li class="link_list_li"><%= link_to "Create Post", new_post_path, class: "link_class" %></li>
+      </div>
+      <% unless user_signed_in? %>
+        <li class="link_list_li"><%= link_to "Log in", new_user_session_path, class: "link_class" %></li>
+      <% end %>
+      <% if user_signed_in? %>
+        <li class="link_list_li"><%= link_to "Log out", destroy_user_session_path, method: :delete, class: "link_class" %></li>
+      <% end %>
     </ul>
   </nav>
 </header>
