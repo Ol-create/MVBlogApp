@@ -1,1 +1,7 @@
-<p><%= comment.author.name %>: <%= comment.text%></p>
+<div class="comments_div">
+  <p><%= comment.author.name %>: <%= comment.text%></p>
+  <% if can? :destroy, Comment.find_by(author_id: comment.author_id, post_id: comment.post_id)  %>
+    <%= button_to "Delete Comment", user_post_comment_path(@post.author, @post, comment), method: :delete, class: "function_button" %>
+  <%end%>
+</div>
+<hr/>
