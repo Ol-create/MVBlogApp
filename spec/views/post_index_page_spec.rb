@@ -2,19 +2,19 @@ require 'rails_helper'
 
 RSpec.describe 'Post Index Page', type: :feature do
   before(:each) do
-    @augusto = User.create(name: 'Augusto', photo: 'Photo', bio: 'Hello World, I am Augusto')
+    @oluyemi = User.create(name: 'oluyemi', photo: 'Photo', bio: 'Hello World, I am oluyemi')
     (1..5).each do |id|
       Post.create(
         title: "Post #{id}",
-        text: 'Hello World, I am Augusto',
-        author_id: @augusto.id
+        text: 'Hello World, I am oluyemi',
+        author_id: @oluyemi.id
       )
     end
-    visit user_posts_path(@augusto)
+    visit user_posts_path(@oluyemi)
   end
 
   it 'shows the username' do
-    expect(page).to have_content(@augusto.name)
+    expect(page).to have_content(@oluyemi.name)
   end
 
   it 'shows the user\'s photo' do
@@ -35,7 +35,7 @@ RSpec.describe 'Post Index Page', type: :feature do
   end
 
   it 'shows the post\'s text' do
-    expect(page).to have_content('Hello World, I am Augusto')
+    expect(page).to have_content('Hello World, I am oluyemi')
   end
 
   it 'shows the post\'s number of comments' do
@@ -48,8 +48,8 @@ RSpec.describe 'Post Index Page', type: :feature do
 
   it 'redirects to the posts show page when a post is clicked' do
     click_on 'Post 5'
-    expect(page).to have_current_path user_post_path(@augusto, @augusto.posts.last)
-    expect(page).to have_content('Hello World, I am Augusto')
+    expect(page).to have_current_path user_post_path(@oluyemi, @oluyemi.posts.last)
+    expect(page).to have_content('Hello World, I am oluyemi')
   end
 
   it 'has a pagination button' do
