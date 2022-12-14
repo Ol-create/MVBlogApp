@@ -25,5 +25,3 @@ class Post < ApplicationRecord
     author.update(post_counter: author.posts.count)
   end
 end
-
-# post = Post.create(title: 'My first post', author: User.first)
