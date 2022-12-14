@@ -45,6 +45,9 @@ gem 'bootsnap', require: false
 # Use Rubocop to enforce best practices
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+# Use Bullet to detect N+1 queries
+gem 'bullet', group: 'development'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -74,4 +77,4 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
-end
+end 
