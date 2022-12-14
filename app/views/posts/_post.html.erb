@@ -1,0 +1,10 @@
+<div class="post_container">
+  <h3><%= post.title%></h3>
+  <p><%= post.text%></p>
+  <div class="social_status">
+    <h4>Comments <%= post.comments_counter%>, Likes <%= post.likes_counter%></h4>
+    <% if user_signed_in? %>
+      <%= button_to "Like Post", user_post_likes_path(@user, post), method: :post, class: "like_button" %>
+    <% end %>
+  </div>
+</div>

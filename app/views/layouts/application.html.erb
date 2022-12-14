@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
+    <title>BlogApp</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
   </head>
 
+  <%= render 'nav/nav' %>
+
   <body>
+    <%
+=begin%>
+ <div class="container">
+      <% if notice != nil %>
+        <p class="notice alert alert-info"><%= notice %></p>
+      <% end %>
+    </div> 
+<%
+=end%>
     <%= yield %>
   </body>
 </html>
