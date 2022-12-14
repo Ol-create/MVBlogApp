@@ -14,7 +14,7 @@
  *= require_self
  */
 
-body {
+ body {
   width: 90%;
   margin: 0 auto;
 }
@@ -24,6 +24,11 @@ body {
   margin: 1rem 0;
   display: flex;
   justify-content: space-between;
+}
+
+.left-links {
+  display: flex;
+  gap: 1rem;
 }
 
 .link_list_li {
@@ -144,4 +149,24 @@ body {
 
 .like_button:active {
   background-color: #d2d0d0;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+}
+
+.log-in-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.log-in-button {
+  width: 274px;
 }
